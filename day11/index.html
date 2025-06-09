@@ -1,0 +1,168 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flexbox Homepage</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background-color: #333;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 300px;
+      background: linear-gradient(135deg, #6f6f7f, #6c898a);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: slideIn 2s ease-out;
+      color: rgb(88, 61, 61);
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Card Section */
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2rem;
+      gap: 2rem;
+      background-color: #deea96;
+    }
+
+    .card {
+      background-color: rgb(125, 131, 132);
+      border-radius: 10px;
+      width: 400px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .card img {
+      width: 50%;
+      height: 50%;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 1rem;
+    }
+
+    .card-content h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    .card-content p {
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    .card-content button {
+      padding: 0.5rem 1rem;
+      border: 1px;
+      background-color: #333;
+      color: rgba(255, 255, 255, 0.132);
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to My  Homepage!</h1>
+  </section>
+
+  <!-- Cards Section -->
+  <section class="cards">
+    <div class="card">
+      <img src="https://image01-in.oneplus.net/media/202406/19/ec64eb41a8e787a798be1b71c13a51bb.png?x-amz-process=image/format,webp/quality,Q_80" alt="Card Image">
+      <div class="card-content">
+        <h3>mobiles</h3>
+        <button>Read More</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://www.leafstudios.in/cdn/shop/files/1_1099cd20-7237-4bdf-a180-b7126de5ef3d.png?v=1722230645" alt="Card Image">
+      <div class="card-content">
+        <h3>smart watch</h3>
+        <button>Read More</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://www.mivi.in/cdn/shop/files/SuperPods_Opera_ENC_-_Gold.png?v=1730114006&width=990" alt="Card Image">
+      <div class="card-content">
+        <h3>ear pods</h3>
+        <button>Read More</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 MySite. All rights reserved.
+  </footer>
+
+</body>
+</html>
+
+ 
